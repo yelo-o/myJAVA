@@ -16,3 +16,12 @@
 <p align="center">
   <img src="https://github.com/yelo-o/myJAVA/assets/64743180/5aac2737-362a-4f36-9cb3-f1ce56798f3c">
 </p>
+
+## `23.05.16(화)
+
+### switch
+	break가 나올 때까지 하단의 케이스 계속 반복
+
+### 반복문
+	- continue : 즉시, 반복문 상단의 증감치로 이동
+	- break : 즉시 반복문 종료
