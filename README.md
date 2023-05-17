@@ -19,6 +19,9 @@
 
 ## `23.05.16(화)
 
+### ArithmeticException 발생
+	0으로 나누는 경우 발생
+
 ### switch
 	break가 나올 때까지 하단의 케이스 계속 반복
 
