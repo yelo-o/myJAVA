@@ -52,3 +52,41 @@
 		b = current;
 		current = bb+b;
 	}
+	
+### 반복문 탈출 1 - 
+	// 구구단 :2단~5단까지 *1~*9까지 출력하시오
+	// 8의 배수는 출력하지 않는다
+	// 25 이상인 경우 더 이상 출력하지 않는다
+	out: for(int dan=2;dan<6;dan++) {
+		in: for(int i=1;i<10;i++) {
+			if(dan*i >= 25) {
+				break out;
+			}
+			if(dan*i%8==0) {
+				continue;
+			}
+			if(i>1) {
+				System.out.print(",");
+			}
+			System.out.print(dan*i);
+		}
+		System.out.println();
+	}
+
+### 반복문 탈출2 - 변수조정
+	for(int dan=2;dan<6;dan++) {
+		for(int i=1;i<10;i++) {
+			if(dan*i >= 25) {
+				dan = 100;
+				break;
+			}
+			if(dan*i%8==0) {
+				continue;
+			}
+			if(i>1) {
+				System.out.print(",");
+			}
+			System.out.print(dan*i);
+		}
+		System.out.println();
+	}
