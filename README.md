@@ -30,11 +30,11 @@
 	- break : 즉시 반복문 종료
 ### 반복문 1) A,B,C...Z 까지 반복하는 반복문 작성
 	// 문자를 유니코드로 변환하면 int 타입의 숫자로 변환
-		for(int i=65;i<91;i++) {
-			if(i>65) {
-				System.out.print(",");
-			}
-			System.out.print((char)i);
+	for(int i=65;i<91;i++) {
+		if(i>65) {
+			System.out.print(",");
 		}
-		System.out.println();
+		System.out.print((char)i);
+	}
+	System.out.println();
 
