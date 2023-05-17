@@ -37,4 +37,18 @@
 		System.out.print((char)i);
 	}
 	System.out.println();
-
+	
+### 반복문 2) 피보나치 수열
+	// 피보나치 수열 : 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...
+	int bb = 1; // 전전수
+	int b = 0; // 전수
+	int current = 1; // 현재수
+	for(int i=0;i<20;i++) {
+		if(i>0) {
+			System.out.print(",");
+		}
+		System.out.print(current);
+		bb = b;
+		b = current;
+		current = bb+b;
+	}
