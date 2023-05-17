@@ -93,3 +93,13 @@
 
 ### 자동 import
 	Ctrl + Shift + O
+
+### do while문
+- while : 조건 비교 먼저
+- do while : 일단 진행 한번 하고 while문의 조건을 비교
+
+### 배열(Array)
+동일 자료형의 데이터 묶음
+
+
+
