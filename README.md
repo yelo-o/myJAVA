@@ -111,7 +111,7 @@
 	for (int i=0;i<2;i++){
 		totalScore += scoreArr[i];
 	}
-	
+	System.out.println(totalScore);
 
 
 
