@@ -99,7 +99,19 @@
 - do while : 일단 진행 한번 하고 while문의 조건을 비교
 
 ### 배열(Array)
-동일 자료형의 데이터 묶음
+- 정의 : 동일 자료형의 데이터 묶음
+- 사용 예)
+	int []scoreArr; // 배열 선언
+	scoreArr = new int[3]; // 배열 생성
+	scoreArr[0] = 10;
+	scoreArr[1] = 8;
+	scoreArr[2] = 5;
+	int totalScore = 0;
+	for (int i=0;i<2;i++){
+		totalScore += scoreArr[i];
+	}
+	
+
 
 
 
