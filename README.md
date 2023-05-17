@@ -108,11 +108,13 @@
 	scoreArr[1] = 8;
 	scoreArr[2] = 5;
 	int totalScore = 0;
-	for (int i=0;i<2;i++){
+	for (int i=0;i<3;i++){
 		totalScore += scoreArr[i];
 	}
 	System.out.println(totalScore); // >> 18
 
+### 배열 인덱스 오류
+	sop(scoreArr[3]); // ArrayIndexOutofException 발생
 
 
 
