@@ -100,8 +100,8 @@
 
 ### 배열(Array)
 - 정의 : 동일 자료형의 데이터 묶음
-- 사용 예시
 
+### 배열 사용 예시
 	int []scoreArr; // 배열 선언
 	scoreArr = new int[3]; // 배열 생성
 	scoreArr[0] = 10;
