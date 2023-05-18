@@ -114,7 +114,7 @@
 	System.out.println(totalScore); // >> 18
 
 ### 배열 인덱스 오류
-	sop(scoreArr[3]); // ArrayIndexOutofException 발생
+	sop(scoreArr[3]); // ArrayIndexOutOfBoundsException 발생
 
 
 
