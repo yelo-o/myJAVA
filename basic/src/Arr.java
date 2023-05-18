@@ -5,7 +5,6 @@ public class Arr {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		
 //		String []subject = {"국어", "영어", "수학"}; // 생성 + 선언 + 값 대입
 //		subject = {"K", "E", "M"}; // 배열 재초기화 안됨
 //		subject = new String[] {"KOR", "ENG", "MATH"};
@@ -76,7 +75,8 @@ public class Arr {
 		int birthYear = Integer.parseInt(sc.nextLine());
 		System.out.println(zodiacArr[birthYear%zodiacArr.length] + "띠 입니다");
 		 */
-		
+
+		/*
 		// 아래는 삭제 해도 무방
 		// 국어, 영어, 수학 3가지 과목 있음
 		// 학생은 5명
@@ -110,14 +110,131 @@ public class Arr {
 			System.out.println(subject[i] + " 평균 : " + sum/studentSize);
 		}
 		
+		*/
 		
-		// 
-		
-		
-		
-		
-		
+		/*
+		// 출현횟수 계산 방법 -1
+		int []countArr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int []numArr = {1, 10, 3, 2, 1, 2, 2, 5, 6, 3, 1, 4, 4, 9, 9};
+		// 1의 출현 횟수 : 3회
+		// 2의 출현 횟수 : 3회 
+		int cnt;
+		for(int i=0;i<countArr.length;i++) {
+			cnt = 0;
+			for(int j=0;j<numArr.length;j++) {
+				if(countArr[i] == numArr[j]) {
+					cnt += 1;
+				}
+			}
+		System.out.println(countArr[i] + " 의 출현 횟수는 "+ cnt);
+		}
 
+		 */
+		// 출현횟수 계산 방법 - 2
+		int []result = new int[10];
+		int []numArr = {1, 10, 3, 2, 1, 2, 2, 5, 6, 3, 1, 4, 4, 9, 9};
+		for(int i=0;i<numArr.length;i++) {
+			result[numArr[i]-1]++;
+		}
+		for(int i=0;i<result.length;i++) {
+			System.out.println((i+1) + "의 출현횟수 : " + result[i]);
+		}
+		
+		numArr = new int[] {7, 3, 6, 10, 2, 15, 4};
+		int max = numArr[0];
+		for(int i=1;i<numArr.length;i++) {
+			if(numArr[i] > numArr[i-1] ) {
+				max = numArr[i];
+			}
+		}
+		System.out.println("최댓값 : " + max);
+
+		// 중간값 계산도 해볼 것
+		
+		// 정렬(sort) 알고리즘 공부
+		// 종류, 특징 : 선택정렬, 버블정렬 <- 구현할 줄 알아야 함
+		
+		int [][]numArr2 = new int[3][3];
+		int num = 1;
+		for(int i=0;i<numArr2.length;i++) {
+			for(int j=0;j<numArr2[i].length;j++, num++) {
+				numArr2[i][j] = num;
+			}
+		}
+		
+		for(int i=0;i<numArr2.length;i++) {
+			for(int j=0;j<numArr2[i].length;j++, num++) {
+				System.out.print(numArr2[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("-------------------");
+		
+		int [][]numArr3 = new int[3][3];
+		for(int i=0;i<numArr3.length;i++) {
+			for(int j=0;j<numArr3[i].length;j++, num++) {
+				numArr3[j][i] = numArr2[i][numArr3.length-j-1];
+			}
+		}
+		
+			
+		for(int i=0;i<numArr3.length;i++) {
+			for(int j=0;j<numArr3[i].length;j++, num++) {
+				System.out.print(numArr3[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("-------------------");
+		
+		// 열의 개수가 다른 행렬 
+		int [][]numArr4 = new int[3][]; // 행만 미리 지정하고 열을 각자 다르게 지정하기 위해 선언
+		for(int i=0;i<numArr4.length;i++) {
+			numArr4[i] = new int[i+1];
+		}
+		int cnt = 1;
+		for(int i=0;i<numArr4.length;i++) {
+			for(int j=0;j<numArr4[i].length;j++, cnt++)
+				numArr4[i][j] = cnt;
+		}
+		
+		for(int i=0;i<numArr4.length;i++) {
+			for(int j=0;j<numArr4[i].length;j++, num++) {
+				System.out.print(numArr4[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("-------------------");
+		
+		int [][]numArr5 = new int[5][];
+		for(int i=0;i<numArr5.length;i++) {
+			numArr5[i] = new int[i+1];
+		}
+		// 기본 값 대입
+		// 1열에 1 대입
+		for(int i=0;i<numArr5.length;i++) {
+			numArr5[i][0] = 1;
+		}
+
+		// 1행 1열 값 대입
+		numArr5[1][1] = 1;
+		
+		
+		
+		
+		// 결과 값 출력
+		for(int i=0;i<numArr5.length;i++) {
+			for(int j=0;j<numArr5[i].length;j++, num++) {
+				System.out.print(numArr5[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
 	}
 
 }
